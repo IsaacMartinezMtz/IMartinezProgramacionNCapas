@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f7aae4193a8148bc8dd84a51df5cddd6" Name="Diagram1">
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.Colonia" Width="1.5" PointX="3" PointY="5.875" />
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.Direccion" Width="1.5" PointX="5.25" PointY="1.75" />
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.Estado" Width="1.5" PointX="1.5" PointY="9" />
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.Municipio" Width="1.5" PointX="0.75" PointY="6" />
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.Pai" Width="1.5" PointX="1.5" PointY="12.125" />
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.Rol" Width="1.5" PointX="0.75" PointY="2.125" />
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.sysdiagram" Width="1.5" PointX="5.75" PointY="5.75" />
+        <AssociationConnector Association="IMartinezProgramacionNCapasModel.FK__Colonia__IdMunic__3F466844" />
+        <AssociationConnector Association="IMartinezProgramacionNCapasModel.FK__Direccion__IdCol__403A8C7D" />
+        <AssociationConnector Association="IMartinezProgramacionNCapasModel.FK__Estado__IdPais__3A81B327" />
+        <AssociationConnector Association="IMartinezProgramacionNCapasModel.FK__Municipio__IdEst__3C69FB99" />
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.Area" Width="1.5" PointX="7.375" PointY="1" />
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.Departamento" Width="1.5" PointX="9.625" PointY="0.875" />
+        <AssociationConnector Association="IMartinezProgramacionNCapasModel.FK__Departame__IdAre__4AB81AF0" />
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.Usuario" Width="1.5" PointX="3" PointY="0.75" />
+        <AssociationConnector Association="IMartinezProgramacionNCapasModel.FK__Direccion__IdUsu__412EB0B6" />
+        <AssociationConnector Association="IMartinezProgramacionNCapasModel.FK__Usuario__idRol__286302EC" />
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.Producto" Width="1.5" PointX="11.875" PointY="0.75" />
+        <EntityTypeShape EntityType="IMartinezProgramacionNCapasModel.Proveedor" Width="1.5" PointX="9.625" PointY="4.375" />
+        <AssociationConnector Association="IMartinezProgramacionNCapasModel.FK__Producto__IdDepa__5CD6CB2B" />
+        <AssociationConnector Association="IMartinezProgramacionNCapasModel.FK__Producto__IdProv__5BE2A6F2" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

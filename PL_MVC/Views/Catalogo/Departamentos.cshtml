@@ -1,0 +1,39 @@
+﻿@model ML.Departamento
+@{
+    ViewBag.Title = "Departamentos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="text-lg-start">
+    <h2>Departamentos</h2>
+</div>
+<hr />
+@using (Html.BeginForm("Areas", "Catalogo", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+    <div class="col-md-3 mb-4">
+        @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control", @placeholder = "Nombre" })
+    </div>
+    <button class="btn btn-dark mb-4" type="submit">Buscar</button>
+}
+<a type="button" class="btn btn-outline-success btn-lg" href="@Url.Action("Productos","Catalogo")">Todos</a>
+<hr />
+<div class="row justify-content-center">
+    @foreach (ML.Departamento departamento in Model.Departamentos)
+    {
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://thumbs.dreamstime.com/z/tienda-isom%C3%A9trica-interior-d-de-los-departamentos-del-supermercado-82331604.jpg?w=768" alt="Card image cap">
+                    <div class="card-body">
+                        <h2>@departamento.Nombre</h2>
+                        <a type="button" class="btn btn-outline-success btn-lg" href="@Url.Action("Productos","Catalogo", new { IdArea = departamento.IdDepartamento })"><i class="bi bi-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+</div>

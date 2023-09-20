@@ -1,0 +1,4 @@
+Nombre|ApellidoPaterno|ApellidoMaterno|FechaNacimiento|IdRol|UseName|Email|Sexo|Telefono|Password|Celular|Curp|Imagen|status|Calle|NumeroInterior|NumeroExterior|IdColonia|
+Marcos|Alcantara|Alcantar|02/05/1999/|2|user20|user20li.com|M|7894512097|hdytdf78|7994102378|MAMGGGXVGS782|||Chapultepec|70|10|2
+Marcos2|Alcantara|Alcantar|02/05/1999/|2|user21|user21li.com|M|7894512097|hdytdf78|7994102378|MAMGGGXVGS782|||Chapultepec|70|10|3
+Marcos3|Alcantara|Alcantar|02/05/1999/|2|user22|user22li.com|M|7894512097|hdytdf78|7994102378|MAMGGGXVGS782|||Chapultepec|70|10|3

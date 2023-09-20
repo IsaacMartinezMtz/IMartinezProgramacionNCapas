@@ -1,0 +1,3 @@
+Ocurrio un error al insertar el usuario con email: user45@li.comError: 
+Ocurrio un error al insertar el usuario con email: user45@li.comError: 
+Ocurrio un error al insertar el usuario con email: user47@lo.comError: 

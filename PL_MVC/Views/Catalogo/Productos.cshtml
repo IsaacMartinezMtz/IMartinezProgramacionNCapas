@@ -1,0 +1,42 @@
+﻿@model ML.Producto
+@{
+    ViewBag.Title = "Productos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-lg-start">
+    <h2>Productos</h2>
+</div>
+<hr />
+@using (Html.BeginForm("Areas", "Catalogo", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+    <div class="col-md-3 mb-4">
+        @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control", @placeholder = "Nombre" })
+    </div>
+    <button class="btn btn-dark mb-4" type="submit">Buscar</button>
+}
+
+<hr />
+<div class="row justify-content-center">
+    @foreach (ML.Producto producto in Model.Productos)
+    {
+ 
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="data:imagen/*;base64,@producto.Imagen" alt="Card image cap">
+                    <div class="card-body">
+                        <h2>@producto.Nombre</h2>
+                        <h3>@producto.PrecioUnitario</h3>
+                        <h4>@producto.Descripcio</h4>
+                        
+                </div>
+            </div>
+        </div>
+           </div>
+
+    }
+
+</div>
+

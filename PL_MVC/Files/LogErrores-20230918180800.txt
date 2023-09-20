@@ -1,0 +1,3 @@
+Ocurrio un error al insertar el usuario con email: user45@li.com Error: An error occurred while executing the command definition. See the inner exception for details.
+Ocurrio un error al insertar el usuario con email: user45@li.com Error: An error occurred while executing the command definition. See the inner exception for details.
+Ocurrio un error al insertar el usuario con email: user47@lo.com Error: An error occurred while executing the command definition. See the inner exception for details.
